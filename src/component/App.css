@@ -1,0 +1,185 @@
+.App {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.header {
+  position: relative; }
+  .header__image {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    z-index: -1; }
+    .header__image-src {
+      height: 480px;
+      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.26)), url("./img/img-home.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      filter: blur(8px); }
+  .header__icons {
+    max-width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    z-index: 20; }
+    .header__icons svg {
+      color: #fff !important; }
+  .header__form {
+    display: flex;
+    flex: 1; }
+    .header__form-input {
+      flex: 1;
+      border: none;
+      border-bottom: 2px solid green;
+      outline: none;
+      background-color: transparent; }
+    .header__form-btn {
+      border: none;
+      border-bottom: 2px solid green;
+      outline: none;
+      background-color: transparent; }
+  .header__text {
+    color: #fff;
+    background-color: transparent;
+    max-width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 20; }
+    .header__text a,
+    .header__text a:active {
+      text-decoration: none;
+      color: inherit; }
+    .header__text > h5 {
+      border: 2px solid #fff;
+      width: 12%;
+      min-width: fit-content;
+      padding: 2px 5px;
+      margin: 0 auto;
+      border-radius: 50px;
+      cursor: pointer; }
+      .header__text > h5:active {
+        background-color: #fff;
+        color: green;
+        user-select: none; }
+
+.sidebar {
+  background-color: #f6f6f6;
+  width: 20%;
+  height: 100vh;
+  position: fixed;
+  margin: 0;
+  z-index: 50;
+  left: -100%;
+  transition: 850ms;
+  display: flex;
+  flex-direction: column; }
+  .sidebar.active {
+    left: 0;
+    transition: 350ms; }
+  .sidebar__Icon {
+    flex: 0.1; }
+  .sidebar__profile {
+    flex: 0.3; }
+  .sidebar__profile-img {
+    background-image: url(https://images.unsplash.com/photo-1601758282715-6446bbde7082?ixid=MXwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=653&q=80);
+    height: 150px;
+    background-position: center;
+    background-size: cover;
+    clip-path: circle(34% at 50% 50%); }
+  .sidebar__profile-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .sidebar__profile-info > h3 {
+      text-transform: uppercase; }
+    .sidebar__profile-info-btn {
+      text-transform: uppercase;
+      border: 2px solid #19cf19;
+      color: #0f750f;
+      min-width: 20px;
+      width: 22%;
+      text-align: center;
+      padding: 2px;
+      font-size: clamp(0.5rem, 1.6vw, 0.7rem);
+      margin: 0 auto;
+      border-radius: 50px;
+      cursor: pointer; }
+      .sidebar__profile-info-btn:active {
+        background-color: #fff;
+        color: #6f6;
+        user-select: none; }
+
+.Classul {
+  flex: 0.6;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: space-around;
+  cursor: pointer; }
+  .Classul__li {
+    list-style: none;
+    font-weight: 500; }
+
+.homepage {
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 20px; }
+  .homepage .changed {
+    color: #fff !important; }
+  .homepage > h1 {
+    text-transform: uppercase;
+    color: #8ba808; }
+  .homepage .none {
+    width: fit-content;
+    padding: 15px 15px;
+    background-color: #b6b4b4fb;
+    margin: auto;
+    text-align: center;
+    font-size: clamp(20px, 4vw, 10px); }
+
+.post_card {
+  text-align: left;
+  width: 60%;
+  margin: 0.5rem auto;
+  border-radius: 3px;
+  padding: 3px 6px;
+  background-color: #b6b4b498; }
+  .post_card > h2 {
+    font-weight: 700; }
+  .post_card-readMore {
+    cursor: pointer;
+    font-weight: 500; }
+
+.post-content {
+  background-color: rgba(204, 198, 198, 0.596);
+  width: 70%;
+  margin: auto;
+  padding: 5px 5px;
+  margin-top: 10px;
+  margin-bottom: 50px; }
+  .post-content form {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+.comment_box {
+  padding: 10px 15px;
+  border-left: none;
+  border-right: none;
+  border-top: 1px dotted rgba(2, 2, 27, 0.904);
+  border-bottom: 1px dotted rgba(2, 2, 27, 0.904);
+  margin: 10px auto;
+  width: 40%;
+  background-color: transparent;
+  outline: none; }
+
+.post_failed {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 100px; }
+
+/*# sourceMappingURL=App.css.map */

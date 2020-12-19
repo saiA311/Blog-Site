@@ -1,0 +1,32 @@
+.post-content {
+  background-color: rgba(204, 198, 198, 0.596);
+  width: 70%;
+  margin: auto;
+  padding: 5px 5px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  form {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.comment_box {
+  padding: 10px 15px;
+  border-left: none;
+  border-right: none;
+  border-top: 1px dotted rgba(2, 2, 27, 0.904);
+  border-bottom: 1px dotted rgba(2, 2, 27, 0.904);
+  margin: 10px auto;
+  width: 40%;
+  background-color: transparent;
+  outline: none;
+}
+.post_failed {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 100px;
+}
